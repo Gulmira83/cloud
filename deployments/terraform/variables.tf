@@ -28,7 +28,7 @@ variable "namespace" {
 
 variable "deployment_endpoint" {
   default = {
-    dev   = "dev.cloud.fuchicorp.com"
+    dev   = "dev.cloud.bishkekdc.com"
     qa    = "qa.cloud.fuchicorp.com"
     test  = "test.cloud.fuchicorp.com"
     prod  = "cloud.fuchicorp.com"
