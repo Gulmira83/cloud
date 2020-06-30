@@ -19,7 +19,7 @@ variable "docker_image_tag" {
 }
 
 variable "domain_name" {
-  default = "mysql.fuchicorp.com"
+  default = "bishkekdc.com"
 }
 
 variable "namespace" {
@@ -27,11 +27,14 @@ variable "namespace" {
 }
 
 variable "deployment_endpoint" {
+  type = "map"
+
   default = {
-    dev   = "dev.cloud.bishkekdc.com"
-    qa    = "qa.cloud.fuchicorp.com"
-    test  = "test.cloud.fuchicorp.com"
-    prod  = "cloud.fuchicorp.com"
+    dev   = "dev.cloud"
+    qa    = "qa.cloud"
+    test  = "test.cloud"
+    prod  = "cloud"
+    stage = "stage.cloud"
   }
 }
 
