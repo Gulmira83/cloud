@@ -27,14 +27,12 @@ variable "namespace" {
 }
 
 variable "deployment_endpoint" {
-  type = "map"
-
   default = {
-    dev   = "dev.cloud"
-    qa    = "qa.cloud"
-    test  = "test.cloud"
-    prod  = "cloud"
-    stage = "stage.cloud"
+    dev   = "dev.cloud.bishkekdc.com"
+    qa    = "qa.cloud.bishkekdc.com"
+    test  = "test.cloud.bishkekdc.com"
+    prod  = "cloud.bishkekdc.com"
+    stage = "stage.cloud.bishkekdc.com"
   }
 }
 
