@@ -19,7 +19,7 @@ variable "docker_image_tag" {
 }
 
 variable "domain_name" {
-  default = "bishkekdc.com"
+  default = "mysql.bishkekdc.com"
 }
 
 variable "namespace" {
