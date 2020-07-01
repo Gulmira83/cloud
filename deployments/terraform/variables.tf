@@ -26,12 +26,17 @@ variable "namespace" {
   default = "test"
 }
 
+variable "google_domain_name" {
+  default = "bishkekdc.com"
+}
+
 variable "deployment_endpoint" {
   default = {
-    dev   = "dev.cloud.fuchicorp.com"
-    qa    = "qa.cloud.fuchicorp.com"
-    test  = "test.cloud.fuchicorp.com"
-    prod  = "cloud.fuchicorp.com"
+    dev   = "dev.cloud"
+    qa    = "qa.cloud"
+    test  = "test.cloud"
+    prod  = "cloud"
+    stage = "stage.cloud"
   }
 }
 
